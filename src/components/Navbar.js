@@ -33,7 +33,13 @@ export default Navbar;
 
 const Wrapper = styled.div`
   padding: 20px 100px 28px 372px;
-  background: rgba(43, 44, 53, 0.4);
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  z-index: 1000;
   .nav {
     display: flex;
     align-items: center;
@@ -44,12 +50,28 @@ const Wrapper = styled.div`
       align-items: center;
       gap: 56px;
       a {
+        position: relative;
         text-decoration: none;
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
         line-height: 24px;
         color: #fff;
+
+        &::after {
+          content: "";
+          width: 0;
+          height: 3px;
+          background: #dda143;
+          position: absolute;
+          top: 27px;
+          left: 0;
+          transition: all 0.4s linear;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
       }
     }
 

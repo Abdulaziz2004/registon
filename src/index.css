@@ -10,3 +10,17 @@ body {
   scroll-behavior: smooth;
   font-family: "Josefin Sans", sans-serif;
 }
+
+.container-main {
+  background: url("../src/assets/img/registon.png") no-repeat center;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.521);
+  /* position: absolute;
+  top: 0; */
+  /* filter: blur(2.5px); */
+  /* opacity: 0.1; */
+}

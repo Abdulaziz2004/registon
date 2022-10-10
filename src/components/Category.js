@@ -38,13 +38,14 @@ function Category() {
 export default Category;
 
 const Wrapper = styled.div`
+  background: #f6f6f9;
   .container {
+    padding: 156px 0 0 0;
     .title {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 12px;
-      margin-top: 156px;
 
       h3 {
         font-style: normal;
@@ -65,6 +66,13 @@ const Wrapper = styled.div`
           background-color: #fab549;
         }
       }
+    }
+
+    .category {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 68px 111px 81px 111px;
+      gap: 24px;
     }
   }
 `;

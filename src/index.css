@@ -24,3 +24,12 @@ body {
   /* filter: blur(2.5px); */
   /* opacity: 0.1; */
 }
+
+.flex-bg {
+  background: url("../src/assets/img/map2.png") no-repeat;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: 100%;
+  background-position: top;
+}

@@ -1,5 +1,9 @@
 import styled from "styled-components";
 import svg from "../assets/icon/nav-bottom.svg";
+import card1 from "../assets/img/wallpaper1.png";
+import card2 from "../assets/img/wallpaper2.png";
+import card3 from "../assets/img/wallpaper4.png";
+import card4 from "../assets/img/wallpaper5.png";
 
 function Map() {
   return (
@@ -30,7 +34,28 @@ function Map() {
             </p>
             <button>Biz bilan bog’lanish</button>
           </div>
-          <div className="flex">sasasa</div>
+          <div className="flex">
+            <div className="wallpaper">
+              <div className="wallpaper-one">
+                <img style={{ width: "100%" }} src={card1} alt="" />
+                <h3>Galareyaga o‘tish</h3>
+              </div>
+              <div className="wallpaper-one">
+                <img src={card2} alt="" />
+                <h3>Galareyaga o‘tish</h3>
+              </div>
+              <div className="wallpaper-thire">
+                <div className="wallpaper-two" style={{ width: "100%" }}>
+                  <img src={card3} alt="" />
+                  <h3>Galareyaga o‘tish</h3>
+                </div>
+                <div className="wallpaper-two" style={{ width: "100%" }}>
+                  <img style={{ width: "100%" }} src={card4} alt="" />
+                  <h3>Galareyaga o‘tish</h3>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </Wrapper>
@@ -95,6 +120,79 @@ const Wrapper = styled.div`
           color: #ffffff;
           cursor: pointer;
           margin-top: 29px;
+        }
+      }
+
+      .flex {
+        .wallpaper {
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+
+          img {
+            width: 100%;
+            transition: all 0.2s ease;
+
+            &:hover {
+              cursor: pointer;
+              opacity: 0.3;
+            }
+          }
+
+          .wallpaper-one {
+            position: relative;
+            h3 {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              transition: all 1s ease;
+
+              font-style: normal;
+              font-weight: 400;
+              font-size: 28px;
+              line-height: 24px;
+              color: #203f7d;
+              opacity: 0;
+              cursor: pointer;
+            }
+
+            &:hover {
+              h3 {
+                opacity: 1;
+              }
+            }
+          }
+
+          .wallpaper-thire {
+            display: flex;
+            gap: 24px;
+
+            .wallpaper-two {
+              position: relative;
+              h3 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: all 1s ease;
+
+                font-style: normal;
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 24px;
+                color: #203f7d;
+                opacity: 0;
+                cursor: pointer;
+              }
+
+              &:hover {
+                h3 {
+                  opacity: 1;
+                }
+              }
+            }
+          }
         }
       }
     }

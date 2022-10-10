@@ -5,7 +5,7 @@ import timeImg from "../assets/icon/time.svg";
 function Categoris({ id, img, price, title, calendar, time }) {
   return (
     <Wrapper>
-      <img src={img} alt="" />
+      <img style={{ width: "100%" }} src={img} alt="" />
 
       <div className="titlee">
         <div className="title-price">
@@ -33,7 +33,8 @@ export default Categoris;
 
 const Wrapper = styled.div`
   .titlee {
-    border-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     background-color: #fff;
     padding: 24px 16px 16px 14px;
 

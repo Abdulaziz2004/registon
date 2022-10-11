@@ -65,4 +65,12 @@ const Wrapper = styled.div`
   .vedio {
     margin-top: 39px;
   }
+
+  @media (max-width: 1520px) {
+    .title {
+      h3 {
+        font-size: 38px;
+      }
+    }
+  }
 `;

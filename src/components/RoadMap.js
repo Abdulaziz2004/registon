@@ -72,10 +72,18 @@ const Wrapper = styled.div`
     top: 94px;
     margin-left: 252px;
 
+    h2 {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 56px;
+      color: #203f7d;
+    }
+
     .PhoneInput {
       margin-top: 53px;
+      width: 408px;
       input {
-        width: 408px;
         height: 72px;
         background: #ffedd2;
         opacity: 0.5;
@@ -84,6 +92,14 @@ const Wrapper = styled.div`
         border: none;
         outline: none;
         padding: 0 0 0 20px;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+
+        opacity: 0.8;
       }
     }
   }

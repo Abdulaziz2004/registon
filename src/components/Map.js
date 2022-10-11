@@ -197,4 +197,21 @@ const Wrapper = styled.div`
       }
     }
   }
+
+  @media (max-width: 1550px) {
+    .container {
+      padding: 156px 50px 0 50px;
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+
+        .flex-bg {
+          button {
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+  }
 `;

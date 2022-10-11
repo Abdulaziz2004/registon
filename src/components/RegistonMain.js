@@ -27,7 +27,7 @@ function RegistonMain() {
                 <img src={nav} alt="" />
               </div>
               <div>
-                <Link to="#">Biz bilan kashf qiling</Link>
+                <Link to="#">7/24 qo‘llab quvvatlash</Link>
               </div>
             </div>
 
@@ -36,7 +36,7 @@ function RegistonMain() {
                 <img src={nav} alt="" />
               </div>
               <div>
-                <Link to="#">Biz bilan kashf qiling</Link>
+                <Link to="#">O‘zingizni sayohatingizni yarating</Link>
               </div>
             </div>
 
@@ -45,7 +45,7 @@ function RegistonMain() {
                 <img src={nav} alt="" />
               </div>
               <div>
-                <Link to="#">Biz bilan kashf qiling</Link>
+                <Link to="#">Onlayn band qilish</Link>
               </div>
             </div>
           </div>
@@ -129,6 +129,35 @@ const Wrapper = styled.div`
             text-decoration: underline;
           }
         }
+      }
+    }
+  }
+
+  @media (max-width: 1520px) {
+    .container-main {
+      .title {
+        h1 {
+          font-size: 121px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1300px) {
+    .container-main {
+      .title {
+        h1 {
+          font-size: 85px;
+          line-height: 85px;
+        }
+      }
+
+      .bottom-tag {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        margin-top: 0;
       }
     }
   }

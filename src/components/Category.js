@@ -75,4 +75,24 @@ const Wrapper = styled.div`
       gap: 24px;
     }
   }
+
+  @media (max-width: 1550px) {
+    .container {
+      .category {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 68px 50px 81px 50px;
+      }
+    }
+  }
+
+  @media (max-width: 1520px) {
+    .container {
+      .title {
+        h3 {
+          font-size: 38px;
+        }
+      }
+    }
+  }
 `;

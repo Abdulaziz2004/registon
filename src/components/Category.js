@@ -95,4 +95,36 @@ const Wrapper = styled.div`
       }
     }
   }
+
+  @media (max-width: 1360px) {
+    .container {
+      .title {
+        h3 {
+          font-size: 30px;
+        }
+
+        .div-line {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1250px) {
+    .container {
+      .category {
+        display: grid;
+        padding: 68px 30px 81px 30px;
+      }
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .container {
+      .category {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
 `;

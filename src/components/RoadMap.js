@@ -103,4 +103,46 @@ const Wrapper = styled.div`
       }
     }
   }
+
+  @media (max-width: 1100px) {
+    .contact {
+      top: 94px;
+      margin-left: 52px;
+
+      h2 {
+        font-size: 30px;
+      }
+
+      .PhoneInput {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    .contact {
+      top: 32px;
+      margin-left: 52px;
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .PhoneInput {
+        margin-top: 20px;
+        width: 327px;
+        height: 64px;
+      }
+    }
+
+    .linear-grident {
+      width: 100%;
+      height: 248px;
+      background: linear-gradient(
+        90deg,
+        #fab549 100%,
+        rgba(220, 181, 73, 220) 75.94%
+      );
+    }
+  }
 `;

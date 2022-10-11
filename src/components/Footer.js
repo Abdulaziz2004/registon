@@ -181,4 +181,35 @@ const Wrapper = styled.div`
       }
     }
   }
+  @media (max-width: 1050px) {
+    .container {
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+
+        /* .flex{
+          grid-template-columns: ;
+        } */
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .container {
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+
+        .flex {
+          grid-column: 1 / 1;
+        }
+
+        .flex2{
+          margin: 0;
+        }
+      }
+    }
+  }
 `;

@@ -5,24 +5,26 @@ import Gloob from "../assets/icon/globe.svg";
 function Navbar() {
   return (
     <Wrapper>
-      <div className="nav">
-        <div className="nav-link">
-          <Link path="/">Uy</Link>
-          <Link path="#">Yo’nalishlar</Link>
-          <Link path="#">Xizmatlarimiz</Link>
-          <Link path="#">Galareya</Link>
-          <Link path="#">Aloqa</Link>
-        </div>
-
-        <div className="language">
-          <div>
-            <img src={Gloob} alt="" />
+      <div className="container">
+        <div className="nav">
+          <div className="nav-link">
+            <Link path="/">Uy</Link>
+            <Link path="#">Yo’nalishlar</Link>
+            <Link path="#">Xizmatlarimiz</Link>
+            <Link path="#">Galareya</Link>
+            <Link path="#">Aloqa</Link>
           </div>
-          <select style={{ backgroundImage: "url{Gloob}" }}>
-            <option>Uzb</option>
-            <option>Eng</option>
-            <option>Rus</option>
-          </select>
+
+          <div className="language">
+            <div>
+              <img src={Gloob} alt="" />
+            </div>
+            <select style={{ backgroundImage: "url{Gloob}" }}>
+              <option>Uzb</option>
+              <option>Eng</option>
+              <option>Rus</option>
+            </select>
+          </div>
         </div>
       </div>
     </Wrapper>
@@ -32,14 +34,16 @@ function Navbar() {
 export default Navbar;
 
 const Wrapper = styled.div`
-  padding: 20px 100px 28px 372px;
-  background: rgba(0, 0, 0, 0.2);
-  position: fixed;
-  width: 100%;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  z-index: 1000;
+  .container {
+    padding: 20px 100px 28px 372px;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    z-index: 1000;
+  }
   .nav {
     display: flex;
     align-items: center;
@@ -88,6 +92,12 @@ const Wrapper = styled.div`
           color: #000;
         }
       }
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .container {
+      padding: 20px 100px 28px 72px;
     }
   }
 `;

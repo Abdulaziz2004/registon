@@ -73,4 +73,16 @@ const Wrapper = styled.div`
       }
     }
   }
+
+  @media (max-width: 1360px) {
+    .title {
+      h3 {
+        font-size: 30px;
+      }
+
+      .div-line {
+        display: none;
+      }
+    }
+  }
 `;

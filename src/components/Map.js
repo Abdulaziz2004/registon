@@ -214,4 +214,10 @@ const Wrapper = styled.div`
       }
     }
   }
+
+  @media (max-width: 1250px) {
+    .container {
+      padding: 146px 30px 0 30px;
+    }
+  }
 `;

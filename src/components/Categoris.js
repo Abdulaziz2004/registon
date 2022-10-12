@@ -127,4 +127,31 @@ const Wrapper = styled.div`
       }
     }
   }
+
+  @media (max-width: 420px) {
+    .titlee {
+      .title-price {
+        h3 {
+          font-size: 1rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+
+      .calendar-time {
+        .title-calendar {
+          p {
+            font-size: 13px;
+          }
+        }
+        .title-time {
+          
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
 `;

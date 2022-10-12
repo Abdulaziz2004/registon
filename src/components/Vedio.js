@@ -93,4 +93,13 @@ const Wrapper = styled.div`
       }
     }
   }
+
+  @media (max-width: 500px) {
+    .title {
+      margin-top: 40px;
+      h3 {
+        font-size: 22px;
+      }
+    }
+  }
 `;

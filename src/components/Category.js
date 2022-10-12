@@ -135,4 +135,20 @@ const Wrapper = styled.div`
       }
     }
   }
+
+  @media (max-width: 500px) {
+    .container {
+      padding: 40px 0 0 0;
+
+      .title {
+        h3 {
+          font-size: 25px;
+        }
+      }
+
+      .category {
+        padding: 30px 20px 81px 20px;
+      }
+    }
+  }
 `;

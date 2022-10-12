@@ -111,6 +111,7 @@ const Wrapper = styled.div`
 
   @media (max-width: 800px) {
     .container {
+      padding: 20px 20px 28px 20px;
       .nav {
         .nav-link {
           display: none;
@@ -121,7 +122,7 @@ const Wrapper = styled.div`
           margin: 0 0 0 30px;
         }
 
-        .language{
+        .language {
           margin-left: auto;
         }
       }

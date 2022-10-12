@@ -28,7 +28,7 @@ function RoadMap() {
 
         <PhoneInput
           width="408px"
-          height="72px"
+          // height="72px"
           className="phoneInput"
           placeholder="Enter phone number"
           value={value}
@@ -76,7 +76,7 @@ const Wrapper = styled.div`
       font-style: normal;
       font-weight: 400;
       font-size: 40px;
-      line-height: 56px;
+      line-height: 30px;
       color: #203f7d;
     }
 
@@ -167,13 +167,14 @@ const Wrapper = styled.div`
     .contact {
       h2 {
         font-size: 1rem;
+        line-height: 16px;
       }
 
       .PhoneInput {
         margin-left: 0;
-        margin-top: 10px;
+        margin-top: 30px;
         width: 100%;
-        height: 30px;
+        padding: 0;
       }
     }
   }

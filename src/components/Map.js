@@ -251,4 +251,26 @@ const Wrapper = styled.div`
       padding: 146px 20px 0 20px;
     }
   }
+
+  @media (max-width: 500px) {
+    .container {
+      padding: 40px 20px 0 20px;
+
+      .grid {
+        .flex-bg {
+          .title {
+            h2 {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+    /* .title {
+      margin-top: 40px;
+      h3 {
+        font-size: 22px;
+      }
+    } */
+  }
 `;

@@ -206,10 +206,16 @@ const Wrapper = styled.div`
           grid-column: 1 / 1;
         }
 
-        .flex2{
+        .flex2 {
           margin: 0;
         }
       }
+    }
+  }
+
+  @media (max-width: 450px) {
+    .container {
+      padding: 57px 20px 23px 20px;
     }
   }
 `;

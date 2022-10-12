@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Gloob from "../assets/icon/globe.svg";
+import Hamurger from "../assets/icon/hamurger.svg";
 
 function Navbar() {
   return (
@@ -25,6 +26,9 @@ function Navbar() {
               <option>Rus</option>
             </select>
           </div>
+          <div className="hamurger">
+            <img src={Hamurger} alt="" />
+          </div>
         </div>
       </div>
     </Wrapper>
@@ -48,6 +52,10 @@ const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .hamurger {
+      display: none;
+    }
 
     .nav-link {
       display: flex;
@@ -98,6 +106,25 @@ const Wrapper = styled.div`
   @media (max-width: 1100px) {
     .container {
       padding: 20px 100px 28px 72px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .container {
+      .nav {
+        .nav-link {
+          display: none;
+        }
+
+        .hamurger {
+          display: block;
+          margin: 0 0 0 30px;
+        }
+
+        .language{
+          margin-left: auto;
+        }
+      }
     }
   }
 `;

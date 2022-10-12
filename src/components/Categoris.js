@@ -42,6 +42,7 @@ const Wrapper = styled.div`
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 10px;
 
       h3 {
         font-style: normal;
@@ -96,6 +97,32 @@ const Wrapper = styled.div`
           letter-spacing: -0.02em;
           color: #000000;
           margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 570px) {
+    .titlee {
+      .title-price {
+        h3 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 570px) {
+    .titlee {
+      .title-price {
+        h3 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 20px;
         }
       }
     }

@@ -127,4 +127,12 @@ const Wrapper = styled.div`
       }
     }
   }
+
+  @media (max-width: 450px) {
+    .container {
+      .category {
+        padding: 68px 20px 81px 20px;
+      }
+    }
+  }
 `;

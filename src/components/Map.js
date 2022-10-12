@@ -220,4 +220,35 @@ const Wrapper = styled.div`
       padding: 146px 30px 0 30px;
     }
   }
+
+  @media (max-width: 600px) {
+    .container {
+      .grid {
+        .flex-bg {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      .grid {
+        .flex-bg {
+          .title {
+            margin-top: 1rem;
+            h2 {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 450px) {
+    .container {
+      padding: 146px 20px 0 20px;
+    }
+  }
 `;

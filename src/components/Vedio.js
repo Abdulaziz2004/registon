@@ -85,4 +85,12 @@ const Wrapper = styled.div`
       }
     }
   }
+
+  @media (max-width: 600px) {
+    .title {
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+  }
 `;

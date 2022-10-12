@@ -233,6 +233,10 @@ const Wrapper = styled.div`
           font-size: 20px;
           margin-top: 10px;
         }
+
+        button {
+          margin-top: 25px;
+        }
       }
 
       .bottom-tag {
@@ -241,10 +245,39 @@ const Wrapper = styled.div`
         gap: 10px;
         width: 450px;
         margin: 0 auto;
+        margin-top: 25px;
 
         .grid {
-          margin: 0;
+          margin: 15px 0;
           text-align: center;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 450px) {
+    .container-main {
+      .title {
+        h1 {
+          font-size: 45px;
+          line-height: 50px;
+        }
+
+        h4 {
+          font-size: 18px;
+          margin-top: 10px;
+        }
+      }
+
+      .bottom-tag {
+        width: 100%;
+
+        .grid {
+          margin: 4px 0;
+          a {
+            font-size: 1rem;
+            line-height: 1rem;
+          }
         }
       }
     }

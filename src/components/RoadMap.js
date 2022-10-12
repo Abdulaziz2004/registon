@@ -138,11 +138,43 @@ const Wrapper = styled.div`
     .linear-grident {
       width: 100%;
       height: 248px;
+      opacity: 0.7;
       background: linear-gradient(
         90deg,
         #fab549 100%,
         rgba(220, 181, 73, 220) 75.94%
       );
+    }
+  }
+
+  @media (max-width: 500px) {
+    .contact {
+      text-align: center;
+      h2 {
+        font-size: 1rem;
+      }
+
+      .PhoneInput {
+        margin-left: 0;
+        margin-top: 10px;
+        height: 64px;
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 450px) {
+    .contact {
+      h2 {
+        font-size: 1rem;
+      }
+
+      .PhoneInput {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+        height: 30px;
+      }
     }
   }
 `;

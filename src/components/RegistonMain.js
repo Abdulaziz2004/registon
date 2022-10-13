@@ -73,8 +73,8 @@ const Wrapper = styled.div`
     h1 {
       font-style: normal;
       font-weight: 600;
-      font-size: 151px;
-      line-height: 151px;
+      font-size: clamp(8rem, 4vw, 15.1rem);
+      line-height: 120%;
       color: #fff;
 
       span {
@@ -136,9 +136,9 @@ const Wrapper = styled.div`
   @media (max-width: 1520px) {
     .container-main {
       .title {
-        h1 {
+        /* h1 {
           font-size: 121px;
-        }
+        } */
       }
     }
   }
@@ -146,10 +146,10 @@ const Wrapper = styled.div`
   @media (max-width: 1300px) {
     .container-main {
       .title {
-        h1 {
+        /* h1 {
           font-size: 85px;
           line-height: 85px;
-        }
+        } */
       }
 
       .bottom-tag {
@@ -184,10 +184,10 @@ const Wrapper = styled.div`
   @media (max-width: 1360px) {
     .container-main {
       .title {
-        h1 {
+        /* h1 {
           font-size: 100px;
           line-height: 100px;
-        }
+        } */
       }
       .bottom-tag {
         padding: 0 50px;
@@ -225,10 +225,10 @@ const Wrapper = styled.div`
   @media (max-width: 800px) {
     .container-main {
       .title {
-        h1 {
+        /* h1 {
           font-size: 60px;
           line-height: 60px;
-        }
+        } */
         h4 {
           font-size: 20px;
           margin-top: 10px;
@@ -258,10 +258,10 @@ const Wrapper = styled.div`
   @media (max-width: 450px) {
     .container-main {
       .title {
-        h1 {
+        /* h1 {
           font-size: 45px;
           line-height: 50px;
-        }
+        } */
 
         h4 {
           font-size: 18px;
